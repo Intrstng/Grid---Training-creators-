@@ -1,217 +1,412 @@
 @font-face {
-            font-family: "IntroRegular-grid";
-            src: url("fonts/IntroRegular.woff");
+    font-family: "IntroRegular-grid";
+    src: url("fonts/IntroRegular.woff");
 }
 
 @font-face {
-    font-family: "RalewayBold-grid";
-    src: url("fonts/RalewayBold.woff");
-    font-weight: bold;
+font-family: "RalewayBold-grid";
+src: url("fonts/RalewayBold.woff");
+font-weight: bold;
 }
 
 @font-face {
-    font-family: "RalewayExtraBold-grid";
-    src: url("fonts/RalewayExtraBold.woff");
-    font-weight: 800;
+font-family: "RalewayExtraBold-grid";
+src: url("fonts/RalewayExtraBold.woff");
+font-weight: 800;
 }
 
 @font-face {
-    font-family: "RalewayRegular-grid";
-    src: url("fonts/RalewayRegular.woff");
+font-family: "RalewayRegular-grid";
+src: url("fonts/RalewayRegular.woff");
 }
 
 .grid {
-    display: grid;
+display: grid;
 }
 
+body {
+overflow-x: hidden;
+}
 /* Header
 ===================== */
 
 .main-header {
-    min-height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    align-content: center;
-   
+min-height: 100vh;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+position: relative;
+align-content: center;
+
 }
 
 .main-header::before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    background-color: rgb( 72, 86, 97);
-    opacity: 0.8;
-    z-index: 3;
+content: "";
+display: block;
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+background-color: rgb( 72, 86, 97);
+opacity: 0.8;
+z-index: 3;
 }
 
 .header-content {
-    z-index: 5;
-    color:rgba(255, 255, 255);
-    
-    text-align: center;
-    padding: 60px 10px;
+z-index: 5;
+color:rgba(255, 255, 255);
+
+text-align: center;
+padding: 60px 10px;
 
 }
 
 .header-content h1 {
-    font-size: 60px;
-    text-transform: capitalize;
-    font-family: "IntroRegular-grid", sans-serif;
-    font-weight: normal;
-    margin: 20px 0;
-    line-height: 1.5;
+font-size: 60px;
+text-transform: capitalize;
+font-family: "IntroRegular-grid", sans-serif;
+font-weight: normal;
+margin: 20px 0;
+line-height: 1.5;
 }
 
 .button {
-    text-decoration: none;
-    color: rgba(255, 255, 255);
-    font-family: "RalewayExtraBold-grid", sans-serif;
-    font-size: 20px;
-    font-weight: 800;
-    text-transform: capitalize;
-    padding: 8px 65px;
-    background-color: #F0650D;
-    margin-right: 32px;
-    transition: background-color 0.4s ease-out;
+text-decoration: none;
+color: rgba(255, 255, 255);
+font-family: "RalewayExtraBold-grid", sans-serif;
+font-size: 20px;
+font-weight: 800;
+text-transform: capitalize;
+padding: 8px 65px;
+background-color: #F0650D;
+margin-right: 32px;
+transition: background-color 0.4s ease-out;
 }
 .button:hover {
-    background-color: #b14b0b;
+background-color: #b14b0b;
 }
 .button:last-child {
-    margin-right: 0;
+margin-right: 0;
 }
 
 .button-grey {
-    background-color: #4b5a65;
-    transition: background-color 0.4s ease-out;
+background-color: #4b5a65;
+transition: background-color 0.4s ease-out;
 }
 
 .button-grey:hover {
-    background-color: #859eb4;
+background-color: #859eb4;
 }
 
 /* Portfolio
 ===================== */
 
 .portfolio-section {
-    padding: 5px;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-gap: 5px;   
+padding: 5px;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: repeat(3, 1fr);
+grid-gap: 5px;
 }
 
 .portfolio-item {
-    max-width: 100%;
-         min-height: 32vh;
-    background-position: center;
-    background-repeat: none;
-    background-size: cover;
-    align-content: center;
-    text-align: center;
-    padding: 0 5px;
-    color: rgba(255, 255, 255);
-    font-size: 22px;
-    font-family: "RalewayRegular-grid", sans-serif;
-    font-weight: bold;
-    position: relative;
-    transition: color 0.4s ease;
-    cursor: pointer; 
+max-width: 100%;
+ min-height: 32vh;
+background-position: center;
+background-repeat: none;
+background-size: cover;
+align-content: center;
+text-align: center;
+padding: 0 5px;
+color: rgba(255, 255, 255);
+font-size: 22px;
+font-family: "RalewayRegular-grid", sans-serif;
+font-weight: bold;
+position: relative;
+transition: color 0.4s ease;
+cursor: pointer; 
 }
 
 .portfolio-item:hover {
-    color: #F0650D;
+color: #F0650D;
 }
 
 /* Overlay */
 
 .portfolio-item::before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    background-color: rgb( 72, 86, 97);
-    opacity: 0.6;
-    transition: opacity 0.5s ease;
+content: "";
+display: block;
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+background-color: rgb( 72, 86, 97);
+opacity: 0.6;
+transition: opacity 0.5s ease;
 }
 
 .portfolio-item:hover::before {
-    opacity: 0.8;
+opacity: 0.8;
 }
 
-        .portfolio-item span {
-            z-index: 5;
-        }
+.portfolio-item span {
+    z-index: 5;
+}
 
 /* Portfolio Grid */
 
 .portfolio-item:nth-child(1) {
-    grid-column: span 2;
+grid-column: span 2;
 }
 
 .portfolio-item:nth-child(5) {
-    grid-column: span 2;
+grid-column: span 2;
 }
 
 .portfolio-item:nth-child(6) {
-    grid-column: 4;
-    grid-row: span 2;
+grid-column: 4;
+grid-row: span 2;
 }
 
 .button-portfolio {
-    width: auto;
-    padding-left: 40px;
-    padding-right: 40px;
-    grid-column: 1 / 5;
-    text-align: center;
-    justify-self: center;
-    margin: 15px 0 30px;
+width: auto;
+padding: 15px 40px;
+grid-column: 1 / 5;
+text-align: center;
+justify-self: center;
+margin: 25px 0 35px;
 }
 
 /* Ready content
 ===================== */
 
-/*
-.landing-image {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+.ready-right img {
+display: block;
+max-width: 100%;
+height: auto;
+} 
+
+.ready-left h2 {
+font-family: "RalewayExtraBold-grid", sans-serif;
+font-size: 34px;
+font-weight: 800;
+line-height: 1.2;
+margin-bottom: 40px;
+}
+
+.ready-left p {
+font-family: "RalewayRegular-grid", sans-serif;
+font-size: 16px;
+line-height: 1.7;
+}
+
+.section-ready {
+background-color: #ededed;
 }
 
 .landing-section {
-    padding: 80px 0;
-    min-height: 60vh;
-    background-color: #ededed;
-    grid-template-columns: minmax(10rem, 0.5fr) 1fr 1fr minmax(10rem, 0.5fr);
+padding: 80px 10px;
+
 }
 
-.landing-text {
-    grid-column: 2 / 3;
-    border-right: 1px solid rgb(182, 182, 182);
-    padding: 60px 60px 60px 0;
-}
-.landing-image {
-    grid-column: 3 / 4;
-    margin: 0 0 0 40px;
+.container {
+max-width: 1200px;
+margin: 0 auto;
 }
 
-.landing-text h2 {
-    font-family: "RalewayExtraBold-grid", sans-serif;
-    font-weight: 800;
-    line-height: 1.2;
+.section-ready .container {
+grid-template-columns: 1fr 1fr;
+align-items: center;
 }
 
-.landing-text p {
-    font-family: Helvetica, sans-serif;
-    font-size: 16px;
+.ready-left {
+border-right: 1px solid #dadada;
+padding: 60px 60px 60px 0;
 }
 
-*/
 
+/* Nav content
+===================== */
+.formsection {
+padding: 30px 10px;
+background-color: #293a43;
+}
+.nav {
+grid-template-columns: 1fr 1fr 1fr minmax(min-content, auto);
+column-gap: 20px;
+} 
 
+.button-nav {
+padding: 18px 45px;
+font-family: "RalewayExtraBold-grid", sans-serif;
+font-size: 17px;
+font-weight: 800;
+}
+
+.nav-input {
+padding: 18px 0 18px 25px;
+background-color: #314853;
+border: none;
+outline: none;
+font-family: Arial, Helvetica, sans-serif;
+transition: background-color 0.6s ease; 
+}
+
+.nav-input::placeholder {
+color: #456574;
+}
+
+.nav-input:focus,
+.nav-input:hover
+    {
+background-color: #fff;
+}
+
+.nav-input:focus::placeholder,
+.nav-input:hover::placeholder {
+color: #314853;
+}
+
+/* Blog
+===================== */
+.blog-home a {
+text-decoration: none;
+}
+
+.blog-item:not(:last-child) {
+background-color:  #f7f7f7;
+transition: background-color 0.6s ease; 
+                                        overflow: hidden;
+}
+
+.blog-item:not(:last-child):hover {
+background-color:  rgba(151, 150, 150, 0.5);
+}
+
+.blog-item-content {
+color: #333333;
+padding: 20px;
+}
+
+.blog-item-content h3 {
+font-family: "RalewayExtraBold-grid", sans-serif;
+font-size: 18px;
+font-weight: bold;
+margin: 0;
+                                        transition: color 0.6s ease;
+}
+.blog-item:hover .blog-item-content h3{
+color: #F0650D;
+}
+
+.blog-item-content p {
+font-family: "RalewayRegular-grid", sans-serif;
+font-size: 16px;
+line-height: 1.4;
+margin: 20px 0 0;
+                                        transition: color 0.6s ease;
+}
+
+.blog-item:hover .blog-item-content p {
+color: rgb(255, 255, 255);
+}
+
+.blog-title {
+font-family: "RalewayExtraBold-grid", sans-serif;
+font-size: 34px;
+font-weight: 800;
+margin-bottom: 50px;
+}
+
+.blog-home {
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: minmax(min-content, auto) minmax(min-content, auto) minmax(min-content, auto);
+grid-gap: 10px;
+}              
+
+.blog-item {
+grid-template-columns: 1fr;
+grid-template-rows: 1fr 1fr;
+text-align: center;
+align-items: center;   /* По тех. заданию такое центрирование */
+}
+
+.blog-item-img {
+height: 270px;
+background-size: cover; 
+background-position: center;
+                                        transition: transform 0.8s ease;
+}
+
+.blog-item:hover .blog-item-img {
+                                            transform: scale(1.05) translateY(-7px);
+}
+
+.blog-item:nth-child(3) {
+grid-column: span 2;
+}
+
+.blog-item:nth-child(4) {
+grid-column: span 2;
+}
+
+.button-blog {
+grid-column: 1 / 5;
+width: auto;
+padding: 15px 40px;
+text-align: center;
+justify-self: center;
+margin: 15px 0 0;
+}
+
+/* Footer
+===================== */
+
+.footer {
+
+background-color: #1b2429;
+grid-template-columns: 1fr;
+grid-template-rows: 0.4fr 1fr 1fr 1fr 0.4fr;
+text-align: center;
+align-items: center;
+}
+
+.footer {
+color: #494d50;
+}
+
+.footer h4 {
+color: #6c7277;
+}
+
+.footer p,
+.footer h4 {
+margin: 0;
+}
+
+.footer {
+font-family: "IntroRegular-grid", sans-serif;
+font-size: 22px;
+line-height: 1.2;
+}
+
+.footer h4 {
+font-family: "IntroRegular-grid", sans-serif;
+font-size: 27px;
+}
+
+.footer span::before,
+.footer span::after {
+content: "~";
+}
+
+.footer p {
+grid-row: 2 / 3;
+}
+.footer h4 {
+grid-row: 3 / 4;
+}
+
+.footer span {
+margin-top: 20px;
+grid-row: 4 / 5;
+}
