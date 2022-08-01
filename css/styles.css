@@ -112,7 +112,7 @@ body {
     max-width: 100%;
     min-height: 32vh;
     background-position: center;
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-size: cover;
     align-content: center;
     text-align: center;
@@ -516,7 +516,7 @@ body {
         padding: 20px 10px;
     }
     .landing-section h2 {
-        font-size: 26x;
+        font-size: 26px;
         text-align: center;
         margin: 15px 0 30px;
     }
